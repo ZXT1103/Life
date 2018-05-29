@@ -9,6 +9,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.news.adapter.CalendarPagerAdapter;
@@ -52,7 +53,7 @@ public class MainActivity extends FragmentActivity implements View.OnFocusChange
         //将显示页面直接定位到今天
         mPager.setCurrentItem(getTodayMonthIndex());
 
-        Button position = (Button) findViewById(R.id.position);
+        ImageView position = (ImageView) findViewById(R.id.position);
         position.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +61,7 @@ public class MainActivity extends FragmentActivity implements View.OnFocusChange
                 startActivity(intent);
             }
         });
-        Button weather = (Button)findViewById(R.id.weather);
+        ImageView weather = (ImageView) findViewById(R.id.weather);
         weather.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
